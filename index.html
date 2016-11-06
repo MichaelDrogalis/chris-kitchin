@@ -1,37 +1,111 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kitchin Made Personal Training</title>
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <img src="./img/km-logo.png" id="header-logo" alt="Kitchin Made Logo" />
+      <div class="header-sub">
+        <h2>Personal Training</h2>
+        <h2>Made Simple</h2>
+      </div>
+    </header>
+    <nav>
+      <li><a href="#" id="training-li">TRAINING</a></li>
+      <li><a href="#" id="pricing-li">PRICING</a></li>
+      <li><a href="#" id="contact-li">CONTACT</a></li>
+    </nav>
+    <!-- TRAINING PAGE -->
+    <section class="s-training">
+      <div class="training-first">
+        <h2>Welcome!</h2>
+        <p>My name is Chris Kitchin and I have been a personal trainer for a couple decades. If you are looking for a convenient way to stay in shape or reach some personal fitness goals, I would love to help! Personal coaching can go a long way towards maintaining a strong, healthy lifestyle.</p>
+        <br>
+        <img id="km-profile" src="./img/km-profile.png" alt="Chris Kitchin" />
+      </div>
+      <div class="training-overview">
+        <h2>Simple Sustainable Fitness</h2>
+        <p>
+          Fitness matters, but why is it so tough to keep a program going? Sometimes it just doesn't stick. I think a lot of our fitness gets derailed when we complicate things and force ourselves into attaining goals that contradict our lifestyles.<br><br> When I work with my clients, I strive to understand their needs, professional responsibilities and personal commitments. Taking the whole person into account means I can craft better fitness plans that work <i>with</i> and not <i>against</i> a person's everyday life. All of this happens at home, making my coaching not just convenient but also effective longterm. Let's simplify your fitness!
+        </p>
+        <br>
+        <img src="./img/calendar.png" alt="" />
+        <img src="./img/weights.png" alt="" />
+        <img src="./img/medical.png" alt="" />
+      </div>
+      <div class="training-first">
+        <h2>Professional Coaching</h2>
+        <p>I have been coaching people with various fitness goals for over 20 years. It has been work I thoroughly enjoy and cannot ever see myself ending. Experience has helped me a lot to understand my clients and how best to build them an in-home program that gets them to where they want. But obviously experience is only good with quality professional training.</p>
+        <br>
+        <input id="cred-b" type="button" name="name" value="VIEW CREDENTIALS">
+        <ul class="credential-list">
+          <li>B.S. Theraputic Recreation - Western Washington University</li>
+          <li>Certified Personal Trainer - National Academy of Sports Medicine (NASM)</li>
+          <li>Corrective Exercise Specialist (NASM)</li>
+          <li>Performance Enhancement Specialist (NASM)</li>
+          <li>Neuromuscular Stretch Trained (NASM)</li>
+          <li>AED/CPR Certified</li>
+        </ul>
+      </div>
+      <div class="training-first">
+        <h2>Home Is Where The Fitness Is</h2>
+        <p>Quality fitness doesn't have to come from a gym. It doesn't require expensive equipment either. No, quality fitness is determined by simple, precise movements and consistent application. I work with all my clients from their homes. <br><br> Why? The real work begins when I leave. People are more likely to maintain their fitness with a trainer beside them, coaching them through the exercises. That's what I love to do, but it's also important for my clients to do some solo homework. Having a plan that fits the person and the person's space/equipment restrictions means a greater likelihoood he or she will keep up the work - and look forward to doing the work in the first place.</p>
+      </div>
+    </section>
+    <!-- PRICING PAGE -->
+    <section class="s-pricing">
+      <div class="pricing-overview">
+        <h2>How Much Does Training Cost?</h2>
+        <p>Multiple pricing plans are available, including one-time consulting sessions and multi-session planning. It's important for us to talk about your goals and what you should expect in terms of reaching them. When we have more of the details sorted out - this happens for free - then you will know exactly how much everything will cost.</p>
+      </div>
+    </section>
+    <!-- CONTACT PAGE -->
+    <section class="s-contact">
+      <div class="contact-overview">
+        <h2>Questions? Let's chat!</h2>
+        <p>I can't imagine you don't have questions. After all, there are a lot of personal trainers out there talking about the same things. Which one is right for you? That depends on your goals.</p>
+        <br>
+        <p>
+          Let's figure out if I can help you or if there are other ways to satisfy your fitness needs. All you have to do is call or email!
+        </p>
+        <br>
+        <input id="contact-b" type="button" name="name" value="START THE CONVERSATION">
+      </div>
+    </section>
+    <footer>
+      <div class="footer-about">
+        <h3>About</h3>
+        <p>
+          KitchinMade Personal Training is owned and operated by Chris Kitchin, a Seattle-based fitness coach emphasizing simple, customized in-home fitness programs.
+        </p>
+      </div>
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p>
+          <b>email: </b><a href="mailto:kitch_kitchin@yahoo.com">kitch_kitchin@yahoo.com</a>
+        </p>
+        <p>
+          <b>phone:</b> 206-390-0052
+        </p>
+      </div>
+      <div class="footer-social">
+        <h3>Social Media</h3>
+        <img src="./img/linkedin.png" id="linkedin-footer" alt="linkedIn" />
+      </div>
+    </footer>
 
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <img id="client-img" src="{{ '/assets/img/IMG_0760.jpg' | prepend: site.baseurl }}">
-    </div>
-    <div class="col-md-6 panel">
-      <h3>In-Home Personal Training Available in Seattle</h3>
-      <ul>
-        <li>Certified Professional Trainer</li>
-        <li>20 years of training experience</li>
-        <li>No need to go to a gym because I come to you!</li>
-      </ul>
-
-      <h3>Convenient Personal Training</h3>
-      <p>One of the best reasons to hire an in-home personal trainer is <i>convenience</i>. I come to you - on your schedule. I bring all needed equipment for a personalized, functional and effective workout.
-No matter what your goals are:</p>
-      <ul>
-        <li>training for a marathon</li>
-        <li>recovery from injury</li>
-        <li>body image and weight management</li>
-        <li>to feel your best</li>
-      </ul>
-
-      <h3>Background</h3>
-      <p>The best reason to work with me is my extensive background in personal training,including 20 years experience working with all types of individuals with the full range of goals.  I love what I do and what I do is teach my clients why they are doing certain exercises, how their breathing will help them through a movement, how to hold a specific posture, and what they should feel when they are doing the exercise on their own.</p>
-
-      <p>Many of my clients already exercise regularly.  But they may not push themselves through the last two or three repetition.
-I can help them to move beyond what they think are their limits.  I do this during my one hour, private personal training sessions.  You can schedule a few sessions to begin the process or schedule the normal 10 week package.</p>
-
-      <p>Please contact me for pricing and availability at 206-390-0052 or <a href="mailto:kitch_kitchin@yahoo.com">kitch_kitchin@yahoo.com</a>.</p>
-    </div>
-  </div>
-</div>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js" type="text/javascript"></script>
+    <!-- control -->
+    <script src="./js/control.js" type="text/javascript"></script>
+    <script>
+      hide();
+      training();
+    </script>
+  </body>
+</html>
